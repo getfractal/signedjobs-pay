@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pay — Signed Jobs | Get Found, Growth System, Lead Machine</title>
+<meta name="description" content="Choose your Signed Jobs plan and pay securely through Stripe. Get Found $149/mo, Growth System $297/mo, Lead Machine $300 setup + $75/mo. No contract on monthly plans.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#faf8f3;
+  --surface:#fff;
+  --ink:#16130d;
+  --ink-soft:#4c463a;
+  --line:#ddd5c4;
+  --amber:#d98a06;
+  --amber-strong:#b96f02;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#14110d;
+    --surface:#1e1a15;
+    --ink:#f3eee3;
+    --ink-soft:#c9c0ad;
+    --line:#3a342a;
+    --amber:#d98a06;
+    --amber-strong:#e89a1a;
+  }
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Barlow',system-ui,-apple-system,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.55;
+  font-size:17px;
+}
+a{color:var(--amber-strong)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.brand,.price,.btn{
+  font-family:'Barlow Condensed','Barlow',sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.02em;
+}
+header.site{
+  border-bottom:1px solid var(--line);
+  background:var(--surface);
+}
+header.site .wrap{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap;
+}
+.brand{font-size:28px;font-weight:700;color:var(--ink);text-decoration:none;line-height:1}
+.brand span{color:var(--amber)}
+header.site nav a{
+  color:var(--ink-soft);text-decoration:none;font-weight:600;font-size:15px;
+}
+header.site nav a:hover{color:var(--amber-strong);text-decoration:underline}
+.hero{padding:48px 0 8px;text-align:center}
+.hero .eyebrow{
+  font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.14em;
+  color:var(--amber-strong);font-weight:600;font-size:15px;margin-bottom:10px;
+}
+.hero h1{font-size:44px;line-height:1.05;font-weight:700;margin-bottom:14px}
+.hero p{color:var(--ink-soft);max-width:640px;margin:0 auto;font-size:18px}
+.pricing{padding:36px 0 8px}
+.cards{
+  display:grid;grid-template-columns:1fr;gap:20px;
+}
+@media (min-width:860px){
+  .cards{grid-template-columns:repeat(3,1fr);align-items:stretch}
+  .hero h1{font-size:56px}
+}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:28px 24px;display:flex;flex-direction:column;position:relative;
+}
+.card.popular{border:2px solid var(--amber)}
+.badge{
+  position:absolute;top:-13px;left:50%;transform:translateX(-50%);
+  background:var(--amber);color:#16130d;font-family:'Barlow Condensed',sans-serif;
+  text-transform:uppercase;letter-spacing:.08em;font-weight:700;font-size:14px;
+  padding:4px 14px;border-radius:999px;white-space:nowrap;
+}
+.card h2{font-size:28px;font-weight:700;line-height:1.1;margin-bottom:6px}
+.card .tagline{color:var(--ink-soft);font-size:15px;margin-bottom:18px}
+.price{font-size:40px;font-weight:700;line-height:1;color:var(--ink)}
+.price small{font-size:18px;color:var(--ink-soft);font-family:'Barlow',sans-serif;text-transform:none;letter-spacing:0;font-weight:500}
+.price-note{color:var(--ink-soft);font-size:14px;margin:6px 0 18px}
+.card ul{list-style:none;margin:0 0 24px;flex:1}
+.card ul li{
+  padding:8px 0 8px 22px;position:relative;color:var(--ink-soft);
+  border-bottom:1px solid var(--line);font-size:16px;
+}
+.card ul li:last-child{border-bottom:none}
+.card ul li::before{
+  content:"";position:absolute;left:0;top:15px;width:8px;height:8px;
+  border-radius:50%;background:var(--amber);
+}
+.card ul li strong{color:var(--ink)}
+.btn{
+  display:block;text-align:center;text-decoration:none;font-weight:700;font-size:20px;
+  letter-spacing:.04em;padding:13px 18px;border-radius:9px;
+  background:var(--amber);color:#16130d;border:1px solid var(--amber);
+}
+.btn:hover{background:var(--amber-strong);border-color:var(--amber-strong);color:#fff}
+.btn.secondary{background:transparent;color:var(--amber-strong)}
+.btn.secondary:hover{background:var(--amber);color:#16130d}
+.secure-note{text-align:center;color:var(--ink-soft);font-size:14px;margin-top:12px}
+section.terms{padding:44px 0 8px}
+.terms-box{
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px 24px;
+}
+.terms-box h2{font-size:30px;margin-bottom:16px}
+.terms-box h3{font-size:20px;margin:20px 0 6px}
+.terms-box h3:first-of-type{margin-top:0}
+.terms-box p{color:var(--ink-soft);margin-bottom:10px}
+.terms-box a{font-weight:600}
+.next-steps{padding:36px 0 52px;text-align:center}
+.next-steps h2{font-size:30px;margin-bottom:10px}
+.next-steps p{color:var(--ink-soft);max-width:560px;margin:0 auto 18px}
+.next-links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.next-links a{
+  font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.03em;
+  font-weight:700;font-size:19px;text-decoration:none;padding:11px 20px;border-radius:9px;
+  border:1px solid var(--amber);color:var(--amber-strong);
+}
+.next-links a:hover{background:var(--amber);color:#16130d}
+footer.site{
+  border-top:1px solid var(--line);background:var(--surface);
+  padding:26px 0;text-align:center;color:var(--ink-soft);font-size:15px;
+}
+footer.site .brand{font-size:22px;display:inline-block;margin-bottom:6px}
+footer.site a{color:var(--ink-soft)}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="https://signedjobs.com">Signed<span>Jobs</span></a>
+    <nav><a href="https://signedjobs.com">&larr; Back to signedjobs.com</a></nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Signed Jobs &mdash; Pricing &amp; Payment</p>
+      <h1>Pick your plan.<br>Pay securely.</h1>
+      <p>Three ways in. Every payment is processed securely by Stripe &mdash; no card details ever touch this site. Monthly plans have no contract.</p>
+    </div>
+  </section>
+
+  <section class="pricing" aria-label="Pricing plans">
+    <div class="wrap">
+      <div class="cards">
+
+        <article class="card">
+          <h2>Get Found</h2>
+          <p class="tagline">Your Google profile, handled.</p>
+          <p class="price">$149<small> /mo</small></p>
+          <p class="price-note">Recurring monthly. No contract &mdash; cancel anytime, out at end of month.</p>
+          <ul>
+            <li><strong>Google Business Profile audit + optimization</strong></li>
+            <li>Reviews monitored &amp; responded to</li>
+            <li>Profile kept current</li>
+            <li>Monthly report</li>
+          </ul>
+          <!-- STRIPE LINK: replace REPLACE_GET_FOUND with the real Payment Link -->
+          <a class="btn secondary" href="https://buy.stripe.com/REPLACE_GET_FOUND">Get Get Found &mdash; $149/mo</a>
+        </article>
+
+        <article class="card popular">
+          <span class="badge">Most Popular</span>
+          <h2>Growth System</h2>
+          <p class="tagline">Get found, and never miss a lead.</p>
+          <p class="price">$297<small> /mo</small></p>
+          <p class="price-note">Recurring monthly. No contract &mdash; cancel anytime, out at end of month.</p>
+          <ul>
+            <li><strong>Everything in Get Found</strong></li>
+            <li><strong>Lead Machine installed free</strong> (normally $300)</li>
+            <li>Instant lead follow-up</li>
+            <li>Review requests after each job</li>
+            <li>One monthly report covering reviews + leads</li>
+          </ul>
+          <!-- STRIPE LINK: replace REPLACE_GROWTH_SYSTEM with the real Payment Link -->
+          <a class="btn" href="https://buy.stripe.com/REPLACE_GROWTH_SYSTEM">Get Growth System &mdash; $297/mo</a>
+        </article>
+
+        <article class="card">
+          <h2>Lead Machine</h2>
+          <p class="tagline">Standalone lead follow-up system.</p>
+          <p class="price">$300<small> setup + $75/mo</small></p>
+          <p class="price-note">$300 one-time setup, then $75/mo recurring.</p>
+          <ul>
+            <li><strong>Quote-request form on your own Google account</strong></li>
+            <li>Instant customer confirmation + instant owner alert</li>
+            <li>Lead dashboard</li>
+            <li>Daily stale-lead reminders</li>
+          </ul>
+          <!-- STRIPE LINK: replace REPLACE_LEAD_MACHINE with the real Payment Link -->
+          <a class="btn secondary" href="https://buy.stripe.com/REPLACE_LEAD_MACHINE">Get Lead Machine &mdash; $300 + $75/mo</a>
+        </article>
+
+      </div>
+      <p class="secure-note">Payments processed securely by Stripe. You will complete checkout on Stripe&rsquo;s site.</p>
+    </div>
+  </section>
+
+  <section class="terms" aria-label="Terms and trust">
+    <div class="wrap">
+      <div class="terms-box">
+        <h2>Straight terms</h2>
+
+        <h3>Secure payment by Stripe</h3>
+        <p>All payments are processed securely by Stripe. Your card details go to Stripe only &mdash; they are never entered on, or stored by, this site.</p>
+
+        <h3>No contract on monthly plans</h3>
+        <p>Get Found and Growth System are month-to-month. You can cancel anytime by emailing <a href="mailto:josh@signedjobs.com">josh@signedjobs.com</a> &mdash; you are out at the end of the paid month. No cancellation fee, no phone call required.</p>
+
+        <h3>Founder-run</h3>
+        <p>Signed Jobs is founder-run: you deal with the builder, not a call center. Everything is handled by email &mdash; no phone tag.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="next-steps">
+    <div class="wrap">
+      <h2>Not ready to pay?</h2>
+      <p>Start with a free audit, or watch the Lead Machine work live before you decide.</p>
+      <div class="next-links">
+        <a href="https://audit.signedjobs.com">Not sure? Get a free audit first</a>
+        <a href="https://demo.signedjobs.com">See the Lead Machine live</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="brand" href="https://signedjobs.com">Signed<span>Jobs</span></a>
+    <p>Signed Jobs &middot; New Iberia, LA &middot; <a href="mailto:josh@signedjobs.com">josh@signedjobs.com</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
